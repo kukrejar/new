@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </head>
 <body>
-    <h1>hello</h1>
+    <h1>Event Handling</h1>
+    <button onClick="alert('Button clicked');">Click Me</button>
+    <h1>Event Handling</h1>
+    <button onmouseenter="show();">Click Me</button> 
+    <h1>event Handling</h1>
+    <button id="mybtn1">Click Me</button>
+    <h1>event Handling</h1>
+    <button id="mybtn2">Click Me</button>
+
 </body>
+<script>
+    function show(){
+        alert("hello event");
+    }
+    var btn=document.getElementById("mybtn1")
+    btn.onclick=function(){
+        alert("Button Clicked");
+    };
+    btn.onmouseenter=function(){
+        alert("button clicked 2");
+    };
+    var btn=document.getElementById("mybtn2");
+    btn.addEventListener("click",function(){alert("Button Clicked")})
+</script>
 </html>
+

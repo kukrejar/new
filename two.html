@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Mouse Event </h1>
+    
+    <div id="one" style="width:100px; height:100px;background-color: red">
+    <div id="two" style="width:60px;height:60px;background-color: black"></div>;
+    </div>
+    <script>
+        let a = true;
+        function div1(e){
+            if(a){
+                divOne.style.backgroundColor="green";
+            }
+            else{
+                divOne.style.backgroundColor="red";
+            }
+            a=!a;
+            console.log("color changed")
+        }
+        var divOne=document.getElementById("one");
+        var divTwo=document.getElementById("two");
+        divOne.addEventListener("focusin",div1)
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Focus Event</h1>
+    Name<input type="text" id="mytext">
+    <script>
+        var mytext=document.getElementById("mytext");
+       
+        function fe1(e){
+            
+        }
+        mytext.addEventListener("focus",(e)=>{ mytext.style.backgroundColor='orange'});
+        mytext.addEventListener("blur",(e)=>{mytext.style.backgroundColor='white'});
+
+    </script>
+</body>
+</html>

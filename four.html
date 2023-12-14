@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // string concatination
+        console.log("string concatination example")
+        function name(a,b,c)
+        {
+            return "My name is  " +a +" "+b+ " and i work here in  "+c;
+
+        }
+       console.log(name("divyam","kukreti","codebrew"));
+
+    //    string interpolation
+    console.log("string interpolation example");
+
+    function name(a,b,c)
+    {
+        return `my name is ${a} ${b} and i work here in ${c}`;
+    }
+    console.log(name("divyam","kureti","code brew"));
+
+    // parseint method
+    str="10"
+    var a=parseInt(str);
+    let sum=10+a;
+    console.log(sum);
+    // math functions
+    console.log("math  functions examples")
+    let num=5.6
+    console.log(Math.ceil(num));
+    console.log(Math.trunc(num));
+    console.log(Math.floor(num));
+    console.log(Math.min(0, 150, 30, 20, -8, -200));
+    // objects
+    
+    console.log("objects examples");
+    const obj={
+        name:"divyam",
+        company:"code brew",
+        fun4:()=>{
+            return obj.name;
+        }
+
+
+    }
+    console.log(obj.name);
+    console.log(obj.company);
+    console.log(obj.fun4());
+    const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+ 
+}
+console.log(myObj.cars[0].name);
+console.log(myObj.cars[1].models[1]);
+// Arrow function-implicit function
+
+console.log("implicit function example");
+ let factorial=(a)=>{
+    let fact=1;
+    while(a>1){
+    fact=fact*a;
+    a--;
+    }
+    console.log(fact);
+ } 
+ factorial(4)
+ 
+
+//  string Methods
+str="divyam kukreti"
+console.log(str.length)
+console.log(str.slice(4,9));
+console.log(str.substr(3,5));
+console.log(str.toUpperCase());
+
+
+// arrow function explicit with return keyword
+
+function getDigitSum(num5) {
+   let sum = 0;
+   while (num > 0) {
+      sum=sum+num%10;
+      num=Math.floor(num/10);
+   }
+   return sum;
+}
+const number = 123456;
+const digitSum = getDigitSum(number);
+console.log(digitSum); 
+
+
+
+
+      
+
+    </script>
+</body>
+</html>
